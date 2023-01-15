@@ -202,24 +202,28 @@ nav ul li:last-child {
   font-weight: 400;
 }
 
-.weekly-heading {
+.section-heading {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
 }
 
-.weekly-heading h1 {
+.section-heading h1 {
   font-size: 3.3rem;
   font-weight: 500;
 }
 
-.weekly-heading a:link,
-.weekly-heading a:visited {
+.section-heading a:link,
+.section-heading a:visited {
   font-size: 1.4rem;
   font-weight: 500;
   text-decoration: none;
   color: #686a6d;
   align-self: flex-end;
+}
+
+.section-weekly {
+  margin-bottom: 4rem;
 }
 
 .weekly-grid {
@@ -322,4 +326,50 @@ nav ul li:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.2rem;
+}
+
+.news-item {
+}
+
+.news-item img {
+  margin-bottom: 3.3rem;
+  width: 100%;
+}
+
+.news-item h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.news-item p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 47rem;
+  color: #686a6d;
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+
+.news-item a:link,
+.news-item a:visited {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #686a6d;
+}
+
+.news-link-container {
+  display: flex;
+}
+
+.news-link-container img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
