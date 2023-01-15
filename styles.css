@@ -373,3 +373,48 @@ nav ul li:last-child {
   width: 1.5rem;
   height: 1.5rem;
 }
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.recipes-grid img {
+}
+
+.recipes-text-container {
+  background-color: #e3e5e8;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 13.8rem;
+  position: relative;
+}
+
+.recipes-text-container h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+}
+
+.recipes-text-container p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 36rem;
+  color: #686a6d;
+}
+
+.recipes-link-container {
+  position: absolute;
+  right: 13.8rem;
+  bottom: 4.5rem;
+}
+
+.recipes-text-container a:link,
+.recipes-text-container a:visited {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #686a6d;
+}
