@@ -29,10 +29,15 @@ header {
   display: flex;
 }
 
+.header-left-wrapper img {
+  height: 3.7rem;
+}
+
 .search-container {
   display: flex;
   flex-direction: row;
   margin-left: 2.5rem;
+  position: relative;
 }
 
 .search-container input {
@@ -48,6 +53,10 @@ header {
   font-family: "Blogger Sans", sans-serif;
 }
 
+.search-container input:focus {
+  outline: none;
+}
+
 .search-container button {
   width: 12.5rem;
   height: 4rem;
@@ -59,6 +68,23 @@ header {
   border-style: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+#search-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+}
+
+.search-container button img {
+  width: 1.8rem;
+  height: 1rem;
 }
 
 .nav-buttons-container {
@@ -86,12 +112,25 @@ header {
   display: inline-block;
 }
 
-.cart-icon::after {
-  display: inline-block;
+.cart {
+  position: relative;
+}
+
+.cart::before {
+  position: absolute;
+  left: 0.9rem;
+  top: -1.3rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
   content: "14";
-  height: 2rem;
-  width: 2rem;
+  color: #fff;
+  height: 1.9rem;
+  width: 1.9rem;
   background-color: #cf2316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -114,6 +153,10 @@ nav ul li:last-child {
   font-weight: 500;
   text-decoration: none;
   color: #686a6d;
+}
+
+.arrow-icon {
+  margin-left: 0.5rem;
 }
 
 .promo-gallery {
@@ -146,13 +189,13 @@ nav ul li:last-child {
 .promo-reactions-container {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 2.2rem;
   margin-top: 1.5rem;
 }
 
 .promo-reaction {
   display: flex;
-  gap: 5px;
+  gap: 7px;
 }
 
 .promo-reaction p {
@@ -182,6 +225,8 @@ nav ul li:last-child {
 .weekly-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  width: 100%;
 }
 
 .weekly-item {
@@ -190,9 +235,10 @@ nav ul li:last-child {
   border: 1px solid #e3e5e8;
   display: flex;
   flex-direction: column;
-
+  position: relative;
   justify-content: center;
   padding: 1.3rem 1.8rem;
+  border-radius: 10px;
 }
 
 .weekly-item p {
@@ -212,9 +258,68 @@ nav ul li:last-child {
   margin-top: 2.7rem;
 }
 
+.arrow-right {
+  transform: rotate(-90deg);
+}
+
 .price-old {
   font-size: 1.1rem !important;
   font-weight: 400;
   text-decoration: line-through;
   text-decoration-color: #cf2316;
+}
+
+.weekly-button {
+  height: 2.8rem;
+  width: 8rem;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2.8rem;
+  right: 1.8rem;
+  gap: 7px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf2316;
+}
+
+.weekly-button-cart {
+  background-color: #cf2316;
+
+  color: #fff;
+}
+
+.weekly-button-added {
+  border: 1.5px solid #cf2316;
+}
+
+.weekly-button-icon {
+  margin: 0 !important;
+}
+
+.weekly-heart {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.discount::before {
+  content: "-18%";
+  background-color: #cf2316;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 5rem;
+  top: -1.5rem;
+  left: 0;
+  position: absolute;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
